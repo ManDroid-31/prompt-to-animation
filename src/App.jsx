@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 import './App.css'
 
 // Initialize Gemini API with proper configuration
-const genAI = new GoogleGenerativeAI('AIzaSyDdTt_6hMJ7dRf8cb85ElD6m-EETIuxkgQ') // Replace with your actual API key
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY)
 
 function App() {
   const [prompt, setPrompt] = useState('')
